@@ -6,4 +6,4 @@ jobs:
     name: Test
     steps:
       - run: sudo snap install nmap
-      - run: nmap -Pn 10.1.0.146
+      - run: nmap -Pn -p80,443,3389,8084,22 10.1.0.146
