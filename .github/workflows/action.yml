@@ -1,0 +1,9 @@
+on: [push]
+
+jobs:
+  ENV:
+    runs-on: ubuntu-latest
+    name: Test
+    steps:
+      - run: sudo snap install nmap
+      - run: nmap -Pn 10.1.0.146
